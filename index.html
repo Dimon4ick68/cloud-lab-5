@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Team 8 - GCP Project</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #1a1d21; color: white; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: #2d3238; padding: 30px; border-radius: 15px; border-top: 5px solid #4285f4; width: 350px; text-align: center; box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+        h1 { color: #4285f4; margin: 10px 0; }
+        .team-badge { background: #34a853; display: inline-block; padding: 2px 12px; border-radius: 10px; font-size: 0.8rem; font-weight: bold; }
+        .members { background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px; margin: 20px 0; text-align: left; }
+        ul { list-style: none; padding: 0; margin: 0; }
+        li { padding: 5px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        input { width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #5f6368; background: #202124; color: white; box-sizing: border-box; }
+        button { background: #4285f4; color: white; border: none; padding: 12px; width: 100%; border-radius: 5px; cursor: pointer; font-weight: bold; }
+        button:hover { background: #3367d6; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="team-badge">TEAM 8</div>
+        <h1>Cloud App</h1>
+        <div class="members">
+            <strong>Склад команди:</strong>
+            <ul>
+                <li>👤 Шереметьєв</li>
+                <li>👤 Соколова</li>
+                <li>👤 Варчук</li>
+            </ul>
+        </div>
+        <input type="text" id="task" placeholder="Введіть повідомлення...">
+        <button onclick="alert('Команда 8 отримала: ' + document.getElementById('task').value)">Надіслати</button>
+    </div>
+</body>
+</html>
