@@ -2,7 +2,7 @@ name: CI/CD Team 8
 
 on:
   push:
-    [cite_start]branches: [ "main" ] 
+    branches: [ "main" ]
 
 jobs:
   build_and_push:
@@ -11,8 +11,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      
-      - name: HTML Hint (Linter)
+      - name: HTML Hint
         uses: htmlhint/htmlhint-action@master
         with:
           source-path: 'index.html'
@@ -28,5 +27,4 @@ jobs:
         with:
           context: .
           push: true
-      
           tags: dimon4ick/team8-app:latest
